@@ -1,0 +1,164 @@
+:root {
+  font-family: "Roboto Mono", sans-serif;
+  --primary-color: #7700ff;
+  --rounded: 10px;
+  --shadow: 0 0 10px rgb(121, 49, 255);
+  --img-shadow: 0 0 10px rgb(135, 70, 255);
+  --animate: all ease-in-out .2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  padding: 20px;
+}
+
+a { 
+  grid-area: 1;
+  justify-content: center;
+}
+
+header {
+  display: grid;
+  grid-template: auto / auto;
+  grid-column: 1 / -1;
+
+  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+header span {
+  display: block;
+  font-size: xx-large;
+  padding: 30px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  font-size: 20px;
+
+  place-items: center;
+
+  color: white;
+  background-color: black;
+}
+
+nav a {
+  padding: 20px;
+
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+
+  background-color: #7d7d7d;
+  border-radius: var(--rounded);
+
+  transition: var(--animate);
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  min-height: 500px;
+}
+
+main h1 {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
+
+footer {
+  display: block;
+  grid-column: 1 / -1;
+  padding: 50px;
+  min-height: 140px;
+  
+  text-align: center;
+
+  color: black;
+  background-color: #a455ff;
+}
+
+/* Class styling */
+
+.card {
+  margin: 10px;
+  background-color: white;
+
+  border: 1px black solid;
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+}
+
+.card h2 {
+  padding: 10px;
+  text-align: center;
+
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: var(--rounded);
+  border-bottom: 10px solid #6200d1;
+}
+
+.card h3 {
+  padding: 20px;
+  margin: 0 100px 0 100px;
+
+  font-size: x-large;
+  text-align: center;
+
+  border-bottom: 2px solid black;
+}
+
+.card .dev-resources {
+  display: flex;
+  height: 90%;
+  margin: 10px;
+  font-size: large;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
+.profile-container img {
+  width: 350px;
+  height: 350px;
+  padding: 2px;
+
+  border: 2px solid #7700ff;
+  border-radius: var(--rounded);
+  box-shadow: var(--img-shadow);
+}
+
+.location-container {
+  display: flex;
+  padding: 50px;
+}
+
+.location-container img {
+  width: 250px;
+  height: 140px;
+  padding: 2px;
+  margin-right: 20px;
+
+  border: 2px solid #7700ff;
+  border-radius: var(--rounded);
+  box-shadow: var(--img-shadow);
+}
