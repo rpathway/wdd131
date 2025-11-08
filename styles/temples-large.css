@@ -1,0 +1,56 @@
+@media screen and (min-width: 500px) {
+  header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px 1rem;
+
+    color: white;
+    background-color: black;
+  }
+
+  header h1 {
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 1rem;
+
+    color: white;
+  }
+
+  nav a {
+    padding: 20px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: white;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  figure {
+    background-color: #dec1ff;
+  }
+
+  footer {
+    background-color: black;
+    color: white;
+  }
+
+  #menu-button {
+    display: none;
+    transition: var(--animate);
+  }
+}
