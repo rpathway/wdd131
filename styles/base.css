@@ -1,6 +1,7 @@
 :root {
   font-family: "Roboto Mono", sans-serif;
   --primary-color: #7700ff;
+  --secondary-color: #a455ff;
   --rounded: 10px;
   --shadow: 0 0 10px rgb(121, 49, 255);
   --img-shadow: 0 0 10px rgb(135, 70, 255);
@@ -87,7 +88,7 @@ footer {
   text-align: center;
 
   color: black;
-  background-color: #a455ff;
+  background-color: var(--secondary-color);
 }
 
 /* Class styling */
