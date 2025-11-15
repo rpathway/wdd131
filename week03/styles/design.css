@@ -1,0 +1,54 @@
+body {
+	font-family: "Roboto Mono", sans-serif;
+}
+
+header, main, footer {
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.banner {
+	padding: 1rem;
+
+	text-align: center;
+
+	background-color: #eee;
+}
+
+h1 {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+h2 {
+	grid-column: span 2;
+
+	text-align: center;
+
+	color: navy;
+}
+
+article p {
+	text-align: justify;
+}
+
+.callout {
+	grid-column: span 2;
+	padding: 1rem;
+
+	color: #eee;
+	background-color: #702963;
+}
+
+footer {
+	margin-top: 1rem;
+
+	font-size: smaller;
+	text-align: left;
+
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
