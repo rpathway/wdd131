@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="General data for the country of Japan including geographic data and weather.">
+  <title>Japan</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Japan</h1>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source srcset="images/japan-landscape-small.webp" media="(max-width: 1000px)">
+        <source srcset="images/japan-landscape-large.webp" media="(min-width: 1001px)">
+        <img src="images/japan-landscape-large.webp" alt="Landscape photo of Mt. Fuji, Japan">
+      </picture>
+    </section>
+
+    <section class="card data">
+      <h2>Data</h2>
+      <strong>Area:</strong><p>337,974 sq km</p>
+      <strong>Population:</strong><p>123,103,479</p>
+      <strong>Capital:</strong><p>Tokyo</p>
+      <strong>Languages:</strong><p>Japanese</p>
+      <strong>Currency:</strong><p>Yen</p>
+      <strong>Time Zone:</strong><p>UTC+9</p>
+      <strong>Calling Code:</strong><p>+81</p>
+      <strong>Internet TLD:</strong><p>.jp</p>
+    </section>
+
+    <section class="card weather">
+      <h2>Weather</h2>
+      <div class="weather-icon">
+        <img src="images/weather-icon-small.svg" alt="Weather icon">
+      </div>
+      <strong>Temperature:</strong><p><span id="temperature">10</span>°C</p>
+      <strong>Conditions:</strong><p>Partly Cloudy</p>
+      <strong>Wind:</strong><p><span id="wind-speed">5</span>km/h</p>
+      <strong>Wind Chill:</strong><p><span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
