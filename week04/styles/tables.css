@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  margin: 1rem;
+  border: 1px solid black;
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+caption {
+  caption-side: bottom;
+}
+
+thead {
+  padding: 10px;
+}
+
+thead tr:first-child th, thead tr:nth-child(2) {
+  padding: 1rem;
+  text-align: center;
+
+  color: white;
+  background-color: black;
+}
+
+th[scope="col"] {
+  padding: .5rem 1rem;
+  background-color: rgb(61, 61, 61);
+}
+
+th[scope="row"] {
+  text-align: left;
+  padding: 0.5rem 1rem;
+}
+
+td {
+  padding: 0 1rem;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid lightgray;
+}
+
+tbody tr:nth-child(even) {
+  background-color: grey;
+}
