@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Robbie Yamashita">
-  <meta name="description" content="WDD131 | Form practice product review form">
+  <meta name="description" content="WDD131 | Form assignment. Input boxes, labeling, styling for mobile, and localstorage practice">
   <title>Product Review Form</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
   </header>
 
   <main>
-    <form id="reviewForm" method="get" action="./review.html">
+    <form id="reviewForm" method="get" action="review.html">
       <div class="card">
         <label for="productName">Product Name <span class="required">*</span></label>
         <select id="productName" name="productName" required>
@@ -53,23 +53,23 @@
         <label>Useful Features</label>
 
         <div class="checkbox-group">
-          <label class="checkbox-option">
+          <label class="checkbox-option" for="feature-easy">
             <input type="checkbox" id="feature-easy" name="features" value="Easy Installation">
             Easy Installation
           </label>
-          <label class="checkbox-option">
+          <label class="checkbox-option" for="feature-durable">
             <input type="checkbox" id="feature-durable" name="features" value="Durable Materials">
             Durable Materials
           </label>
-          <label class="checkbox-option">
+          <label class="checkbox-option" for="feature-efficient">
             <input type="checkbox" id="feature-efficient" name="features" value="Energy Efficient">
             Energy Efficient
           </label>
-          <label class="checkbox-option">
+          <label class="checkbox-option" for="feature-value">
             <input type="checkbox" id="feature-value" name="features" value="Good Value">
             Good Value
           </label>
-          <label class="checkbox-option">
+          <label class="checkbox-option" for="feature-instructions">
             <input type="checkbox" id="feature-instructions" name="features" value="Excellent Instructions">
             Excellent Instructions
           </label>

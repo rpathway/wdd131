@@ -118,3 +118,9 @@ footer {
 .back-button:hover {
   background-color: #1d4ed8;
 }
+
+@media screen and (min-width: 1000px) {
+  .card {
+    box-shadow: none;
+  }
+}
