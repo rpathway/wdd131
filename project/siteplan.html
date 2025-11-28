@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="Dekiru できる | A quick Japanese Language Learning Game focusing on grammar, particles, sentance formation, and practice with the Hiragana and Katakana alphabet.">
+  <title>Dekiru できる | Learn Japanese</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style-large.css">
+  <script src="scripts/game.js" defer></script>
+</head>
+<body>
+ 
+  <header>
+    <nav class="navbar">
+      <div class="navbar-start">
+        <a href="#" class="home-button">
+          <img src="images/home-icon.webp" alt="Home button">
+        </a>
+      </div>
+      <div class="navbar-center">
+        <a href="#" class="nav-title">
+          <h1>Dekiru</h1>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a href="#" class="hamburger-menu">
+          <img src="images/hamburger-menu.webp" alt="Settings button">
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Lessons -->
+    <div class="card" id="lessons-card">
+      <p>Lessons</p>
+    </div>
+
+    <!-- Information -->
+    <div class="card" id="information-card">
+      <!-- Lesson and Alphabet content dynamically generated here -->
+      <div class="info-section">
+        <h2>About This Site</h2>
+        <p>Dekiru (できる)! Meaning "You can do it!", a Japanese language learning site for those who want to start forming sentences quickly!</p>
+          <ul>
+            <li>Practice common phrases.</li>
+            <li>Learn language structure.</li>
+            <li>Understand how particles work.</li>
+            <li>Identify particles in a sentance.</li>
+          </ul>
+      </div>
+      <div class="info-section">
+        <h3>Common Phrases</h3>
+        <p>Some examples of phrases that you will come across in the lessons!</p>
+        <div class="info-phrase">
+          <h5>こんにち<span class="particle">は</span> (konnichiwa)</h5>
+          <p>”は (wa)” Marks the subject of the sentence. In the word ”こんにちは” it does not mark a subject but is apart of the word.</p>
+        </div>
+        <div class="info-phrase">
+          <h5>元気です<span class="particle">か</span> (ogenki desu ka)</h5>
+          <p>”か (ka)” turning the sentence into a question.</p>
+        </div>
+        <div class="info-phrase">
+          <h5>ありがとう<span class="particle">ございます</span> (arigatōgozaimasu)</h5>
+          <p>”ございます (gozaimasu)” a more formal or polite equivilant of ある.</p>
+        </div>
+      </div>      
+    </div>
+
+    <!-- Learn Alphabet -->
+    <div class="card" id="alphabet-card">
+      <p>Alphabet</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-nav">
+      <div class="footer-item">
+        <a href="#">
+          <img src="images/lessons.webp" alt="Lessons button">
+        </a>
+        <span>Lessons</span>
+      </div>
+      <div class="footer-item">
+        <a href="#">
+          <img src="images/home-icon.webp" alt="Home button">
+        </a>
+        <span>Home</span>
+      </div>
+      <div class="footer-item">
+        <a href="#">
+          <img src="images/alphabet-icon.webp" alt="Alphabet button">
+        </a>
+        <span>Alphabet</span>
+      </div>
+    </div>
+    <div class="footer-info">
+      <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+</html>

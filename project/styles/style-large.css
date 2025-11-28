@@ -1,0 +1,30 @@
+@media screen and (min-width: 1000px) {
+  main {
+    margin: 0 auto;
+    flex-direction: row;
+    gap: 2rem;
+
+    align-items: center;
+  }
+
+  .card {
+    min-height: 70vh;
+    width: 30vw;
+  }
+
+  #lessons-card {
+    display: flex;
+  }
+
+  #alphabet-card {
+    display: flex;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-info {
+    font-size: 1.5rem;
+  }
+}
