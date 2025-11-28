@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="WDD131 | Form practice product review form">
+  <title>Product Review Form</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review Form</h1>
+  </header>
+
+  <main>
+    <form id="reviewForm" method="get" action="./review.html">
+      <div class="card">
+        <label for="productName">Product Name <span class="required">*</span></label>
+        <select id="productName" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <div class="card">
+        <label>Overall Rating <span class="required">*</span></label>
+        <div class="star-rating">
+          <input type="radio" id="star-5" name="rating" value="5" required>
+          <label for="star-5"></label>
+          <input type="radio" id="star-4" name="rating" value="4" required>
+          <label for="star-4"></label>
+          <input type="radio" id="star-3" name="rating" value="3" required>
+          <label for="star-3"></label>
+          <input type="radio" id="star-2" name="rating" value="2" required>
+          <label for="star-2"></label>
+          <input type="radio" id="star-1" name="rating" value="1" required>
+          <label for="star-1"></label>
+        </div>
+      </div>
+
+      <div class="card">
+        <label for="installDate">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="installDate" name="installDate" required>
+      </div>
+
+      <div class="card">
+        <label>Useful Features</label>
+
+        <div class="checkbox-group">
+          <label class="checkbox-option">
+            <input type="checkbox" id="feature-easy" name="features" value="Easy Installation">
+            Easy Installation
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" id="feature-durable" name="features" value="Durable Materials">
+            Durable Materials
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" id="feature-efficient" name="features" value="Energy Efficient">
+            Energy Efficient
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" id="feature-value" name="features" value="Good Value">
+            Good Value
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" id="feature-instructions" name="features" value="Excellent Instructions">
+            Excellent Instructions
+          </label>
+        </div>
+      </div>
+
+      <div class="card">
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="5" placeholder="Share your experience with this product..."></textarea>
+      </div>
+
+      <div class="card">
+        <label for="userName">Your Name</label>
+        <input type="text" id="userName" name="userName" placeholder="Optional">
+      </div>
+
+      <input type="submit" value="Submit Review">
+    </form>
+  </main>
+  <footer>
+    <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

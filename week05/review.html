@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="Review submit form completion page">
+  <title>Review Submitted</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/review.css">
+  <script src="scripts/review.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Review Submitted Successfully!</h1>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="message">
+        <h2>Thank You!</h2>
+        <p>Your product review has been submitted.</p>
+      </div>
+    
+      <div class="counter">
+        <p>Total Reviews Completed: <span id="reviewCount">0</span></p>
+      </div>
+    
+      <div class="review-details">
+        <h3>Your Review Summary:</h3>
+        <div id="reviewSummary"></div>
+      </div>
+    
+      <a href="form.html" class="back-button">Submit Another Review</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>
