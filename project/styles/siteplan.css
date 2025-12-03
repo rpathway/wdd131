@@ -1,0 +1,197 @@
+:root {
+  font-family: "Roboto Mono", sans-serif;
+
+  --primary-color: #7700ff;
+  --secondary-color: #110026;
+  --accent-color1: #D1650E;
+  --accent-color2: #240051;
+  --accent-color3: #2B0060;
+
+  --rounded: 20px;
+  --shadow: 0 0 10px var(--accent-color3);
+  --border: 5px solid var(--accent-color2);
+  --animate: all ease-in-out .4s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+}
+
+header {
+  display: flex;
+  padding: 20px;
+  margin: 10px;
+
+  justify-content: center;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  background-color: var(--accent-color1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  padding: 10px;
+  margin: 0 auto;
+
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent-color1)
+}
+
+hr {
+  margin: 10px;
+  grid-column: span 2;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 10px;
+
+  align-items: center;
+
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  background-color: var(--accent-color1);
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 2;
+
+  justify-content: center;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+figcaption {
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+img {
+  height: auto;
+  max-width: inherit;
+}
+
+
+/* Classes */
+
+
+.link-emoji {
+  font-size: 13px;
+}
+.small {
+  width: 10rem;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  margin: 10px;
+  width: 80vw;
+
+  border: var(--border);
+  box-shadow: var(--shadow);
+  border-radius: var(--rounded);
+  background-color: var(--accent-color3);
+}
+
+.card strong {
+  grid-column: 1;
+}
+
+.card p, .card ul, .card ol {
+  grid-column: 2;
+}
+
+.card ul, .card ol {
+  font-size: 13px;
+}
+
+.card.color-scheme {
+  grid-column: 2;
+}
+
+.color-scheme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .5rem;
+}
+
+.color-scheme p {
+  grid-column: 1;
+  font-size: small;
+}
+
+.color-scheme span {
+  grid-column: 2;
+  width: 10px;
+}
+
+.color-card {
+  grid-column: 2;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+
+  border: 1px white solid;
+  box-shadow: var(--shadow);
+  border-radius: 5px;
+
+  transition: var(--animate);
+}
+
+.color-card:hover {
+  content: "test";
+
+  transform: scale(3);
+  transition: var(--animate);
+}
+
+.accent-colors {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+
+/* Colors */
+
+
+.primary-color {
+  background-color: var(--primary-color);
+}
+.secondary-color {
+  background-color: var(--secondary-color);
+}
+.accent-color-1 {
+  background-color: var(--accent-color1);
+}
+.accent-color-2 {
+  background-color: var(--accent-color2);
+}
+.accent-color-3 {
+  background-color: var(--accent-color3);
+}

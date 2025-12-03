@@ -4,107 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Robbie Yamashita">
-  <meta name="description" content="Dekiru できる | A quick Japanese Language Learning Game focusing on grammar, particles, sentance formation, and practice with the Hiragana and Katakana alphabet.">
-  <title>Dekiru できる | Learn Japanese</title>
+  <meta name="description" content="Site plan for WDD131 final project, laying out outlines, resources, and elements that the site will use">
+  <title>Site Plan</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/style-large.css">
-  <script src="scripts/game.js" defer></script>
+  <script src="scripts/siteplan.js" defer></script>
+  <link rel="stylesheet" href="styles/siteplan.css">
 </head>
 <body>
- 
   <header>
-    <nav class="navbar">
-      <div class="navbar-start">
-        <a href="#" class="home-button">
-          <img src="images/home-icon.webp" alt="Home button">
-        </a>
-      </div>
-      <div class="navbar-center">
-        <a href="#" class="nav-title">
-          <h1>Dekiru</h1>
-        </a>
-      </div>
-      <div class="navbar-end">
-        <a href="#" class="hamburger-menu">
-          <img src="images/hamburger-menu.webp" alt="Settings button">
-        </a>
-      </div>
-    </nav>
+    <h1>Site Plan</h1>
   </header>
 
   <main>
-    <!-- Lessons -->
-    <div class="card" id="lessons-card">
-      <p>Lessons</p>
-    </div>
-
-    <!-- Information -->
-    <div class="card" id="information-card">
-      <!-- Lesson and Alphabet content dynamically generated here -->
-      <div class="info-section">
-        <h2>About This Site</h2>
-        <p>Dekiru (できる)! Meaning "You can do it!", a Japanese language learning site for those who want to start forming sentences quickly!</p>
-          <ul>
-            <li>Practice common phrases.</li>
-            <li>Learn language structure.</li>
-            <li>Understand how particles work.</li>
-            <li>Identify particles in a sentance.</li>
-          </ul>
+    <div class="card">
+      <strong>Site Name:</strong>
+      <p><b>Dekiru (できる)</b> - Meaning "you can do it" in Japanese. I thought about a phrase or word that would be short enough so you could say on the fly and something that had common alphabet characters so it would be easier to pronounce for anyone attempting to learn Japanese. Choosing this for the site name brought simplicity as well as meaning behind the translation which supports the user in their learning journey.</p>
+      <hr>
+      <strong>Site Purpose:</strong>
+      <p>Providing beginners with bite-sized Japanese lessons, focusing on:</p>
+      <ul>
+        <li>Common phrases and their structure</li>
+        <li>Grammar particles (like は, か, が)</li>
+        <li>Basic sentence formation</li>
+        <li>Practice with the kana alphabet panel</li>
+        <li>The goal is for learners to start forming simple sentences quickly without being overwhelmed by kanji or long grammar lessons.</li>
+      </ul>
+      <hr>
+      <strong>Scenarios:</strong>
+      <ol>
+        <li>"I want to quickly review a particle I forgot, can I find examples that show it in use?"</li>
+        <li>"I only have a few minutes a day, does the site provide quick lessons I can do daily?"</li>
+        <li>"I'm a visual learner, does the site include common phrases with highlighted particles?"</li>
+        <li>"I want to know about how Japanese sentences are formed differently from English, can this site show me how the two languages differ?"</li>
+      </ol>
+      <hr>
+      <strong>Color Schema:</strong>
+      <div class="color-scheme">
+        <p>Primary Color:</p>
+        <span class="color-card primary-color"></span>
+        <p>Secondary color:</p>
+        <span class="color-card secondary-color"></span>
+        <p>Accent Colors:</p>
+        <div class="accent-colors">
+          <span class="color-card accent-color-1"></span>
+          <span class="color-card accent-color-2"></span>
+          <span class="color-card accent-color-3"></span>
+        </div>
       </div>
-      <div class="info-section">
-        <h3>Common Phrases</h3>
-        <p>Some examples of phrases that you will come across in the lessons!</p>
-        <div class="info-phrase">
-          <h5>こんにち<span class="particle">は</span> (konnichiwa)</h5>
-          <p>”は (wa)” Marks the subject of the sentence. In the word ”こんにちは” it does not mark a subject but is apart of the word.</p>
-        </div>
-        <div class="info-phrase">
-          <h5>元気です<span class="particle">か</span> (ogenki desu ka)</h5>
-          <p>”か (ka)” turning the sentence into a question.</p>
-        </div>
-        <div class="info-phrase">
-          <h5>ありがとう<span class="particle">ございます</span> (arigatōgozaimasu)</h5>
-          <p>”ございます (gozaimasu)” a more formal or polite equivilant of ある.</p>
-        </div>
-      </div>      
+      <hr>
+      <strong>Typography:</strong>
+      <p>The only font used for all elements to maintain consistancy and readability: <a href="https://fonts.google.com/specimen/Roboto+Mono">Roboto Mono</a><span class="link-emoji"><sup>🔗</sup></span> (You're looking at it)</p>
     </div>
-
-    <!-- Learn Alphabet -->
-    <div class="card" id="alphabet-card">
-      <p>Alphabet</p>
+    <div class="card">
+      <strong>Wireframes</strong>
+      <hr>
+      <strong>Desktop and Mobile view:</strong>
+      <strong>Main menu:</strong>
+      <figure>
+        <img src="images/main-menu-wireframe.webp" alt="Wireframe of the site main menu with a Desktop wireframe on the left and a Mobile wireframe on the right" loading="lazy">
+        <figcaption>This wireframe outlines the main page that user's will encounter when visiting the site for the first time.</figcaption>
+      </figure>
+      <hr>
+      <strong>Lessons</strong>
+      <hr class="small">
+      <strong>Desktop and Mobile view</strong>
+      <strong>Main menu:</strong>
+      <figure>
+        <img src="images/lesson-menu-wire-frame.webp" alt="Wireframe of the Lesson's page with a Desktop wireframe on the left and a Mobile wireframe on the right" loading="lazy">
+        <figcaption>This wireframe outlines the page that the user will face when they have selected the "Lessons" card, or if on mobile, have selected the "Lessons" button in the navigation bar.</figcaption>
+      </figure>
+      <hr class="small"> 
+      <strong>Game page:</strong>
+      <figure>
+        <img src="images/lessons-game-page-wireframe.webp" alt="Wireframe of the Lesson's game page with a Desktop wireframe on the left and a Mobile wireframe on the right" loading="lazy">
+        <figcaption>The Lesson content page will be as outlined above after a user has selected a corresponding lesson.</figcaption>
+      </figure>
+      <hr>
+      <strong>Alphabet</strong>
+      <hr class="small"> 
+      <strong>Desktop and Mobile view</strong>
+      <strong>Main menu:</strong>
+      <figure>
+        <img src="images/alphabet-main-menu-wireframe.webp" alt="Wireframe of the Alphabet selection page with a Desktop wirefram on the left and a Mobile wireframe on the right" loading="lazy">
+        <figcaption>This wireframe outlines the page that the user will face when they have selected the "Alphabet" card, or if on mobile, have selected the "Alphabet" button in the navigation bar.</figcaption>
+      </figure>
+      <hr class="small">
+      <strong>Game page:</strong>
+      <figure>
+        <img src="images/alphabet-game-page-wireframe.webp" alt="Wireframe of the Alphabet game page with a Desktop wirefram on the left and a Mobile wireframe on the right" loading="lazy">
+        <figcaption>This is the Alphabet page content when the user has selected a corresponding letter to briefly study.</figcaption>
+      </figure>
     </div>
   </main>
 
   <footer>
-    <div class="footer-nav">
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/lessons.webp" alt="Lessons button">
-        </a>
-        <span>Lessons</span>
-      </div>
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/home-icon.webp" alt="Home button">
-        </a>
-        <span>Home</span>
-      </div>
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/alphabet-icon.webp" alt="Alphabet button">
-        </a>
-        <span>Alphabet</span>
-      </div>
-    </div>
-    <div class="footer-info">
-      <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
-      <p>Last Modification: <span id="lastModified"></span></p>
-    </div>
+    <p>© <span id="currentyear">2025</span> 🌐 Robbie Yamashita 🌐 Canada</p>
+    <p>Last Modification: <span id="lastModified"></span></p>
   </footer>
 </body>
 </html>
