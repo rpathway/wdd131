@@ -16,31 +16,100 @@
   <script src="scripts/game.js" defer></script>
 </head>
 <body>
- 
+
+  <div id="overlay"></div>
   <header>
     <nav class="navbar">
       <div class="navbar-start">
-        <a href="#" class="home-button">
-          <img src="images/home-icon.webp" alt="Home button">
+        <a href="dekiru.html">
+          <button id="homeButton">
+            <span><img src="images/home-icon.webp" alt="Home button" loading="lazy"></span>
+          </button>
         </a>
       </div>
       <div class="navbar-center">
-        <a href="#" class="nav-title">
+        <span class="nav-title">
           <h1>Dekiru</h1>
-        </a>
+        </span>
       </div>
       <div class="navbar-end">
-        <a href="#" class="hamburger-menu">
-          <img src="images/hamburger-menu.webp" alt="Settings button">
-        </a>
+        <div class="dropdown">
+          <button id="menuButton">
+            <span><img src="images/hamburger-menu.webp" alt="Menu button" loading="lazy"></span>
+          </button>
+          <ul class="dropdown-menu" id="dropdownMenu">
+            <li><p id="feedback-button">Feedback</p></li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
 
   <main>
+    <div class="feedback-modal">
+      <form id="feedback-form" method="get" action="submitted_form.html">
+        <h1>Feedback form</h1>
+
+        <div class="feedback-card">
+          <label for="feedbackType">Feedback Type<span class="required-field">*</span></label>
+          <select id="feedback-type" name="feedbackType" required>
+            <option value="" disabled selected>Select feedback type...</option>
+          </select>
+        </div>
+
+        <div class="feedback-card" id="feedback-category-card">
+          <label for="feedbackCategory">Category<span class="required-field">*</span></label>
+          <select id="feedback-category" name="feedbackCategory">
+            <option value="" disabled selected>Select category type...</option>
+          </select>
+        </div>
+
+        <div class="feedback-card">
+          <label for="userName">Your Name</label>
+          <input type="text" id="userName" name="userName" placeholder="Optional">
+        </div>
+
+        <div class="feedback-card">
+          <label for="userEmail">Your Email</label>
+          <input type="text" id="userEmail" name="userEmail" placeholder="Optional@example.com">
+        </div>
+
+        <div class="feedback-card">
+          <label for="review">Review</label>
+          <textarea id="review" name="review" rows="5" placeholder="Share your thoughts with us"></textarea>
+        </div>
+
+        <input type="submit" value="Submit Review">
+      </form>
+    </div>
+
     <!-- Lessons -->
     <div class="card" id="lessons-card">
-      <p>Lessons</p>
+      <h2>Lessons</h2>
+      <div class="info-card">
+        <h3>Learn Japanese Grammar!</h3>
+        <hr>
+        <p>Learn particle usage (<span class="particle">は</span>,<span class="particle">が</span>,<span class="particle">か</span>,<span class="particle">と</span>,<span class="particle">の</span>,<span class="particle">に</span>,<span class="particle">も</span>,<span class="particle">を</span>,<span class="particle">ね</span>,<span class="particle">よ</span>) sentence structure, and common phrases through interactive exercises.</p>
+        <hr>
+        <p>Build practical conversation skills through brief lessons that focus on real-world Japanese usage.</p>
+        <hr>
+        <p>Click the button below to get started!</p>
+      </div>
+      <a href="lessons.html" class="lessons-button">
+        <span class="lessons-icon">
+          <svg class="pencil pencil-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.853 512.853" xml:space="preserve">
+            <path d="M496.084,26.453L484.991,15.36c-19.627-20.48-52.053-20.48-72.533,0l-6.826,6.826c0,0,0,0-0.001,0.001l-31.682,31.682 l-28.05,28.05c0,0,0,0-0.001,0.001L234.135,193.682L82.381,345.436c-0.975,0.426-1.9,1.047-2.724,1.871L55.764,371.2 c-2.019,2.019-2.833,4.633-2.465,7.139L0.297,500.907c-1.707,3.413-0.853,6.827,1.707,9.387c1.707,1.707,3.413,2.56,5.973,2.56c0.853,0,2.56,0,3.413-0.853l127.147-53.76c2.56-0.853,4.267-3.413,5.12-5.973v0l18.736-18.736c0.934-0.42,1.848-0.995,2.597-1.744l331.093-331.093c10.24-9.387,15.36-23.04,15.36-36.693S506.324,36.693,496.084,26.453zM412.014,40.517l60.176,60.176l-23.893,23.893L388.09,64.379L412.014,40.517z M352.203,100.172l23.561,23.561L146.217,353.28l-23.862-23.862L352.203,100.172z M110.82,340.923l30.277,30.277c1.707,1.707,3.413,2.56,5.973,2.56c1.707,0,4.267-0.853,5.973-2.56l240.64-241.493c3.413-3.413,3.413-8.533,0-11.947l-29.519-29.519l11.962-11.931l60.223,60.223L159.017,413.867L98.431,353.28L110.82,340.923z M24.191,488.107l40.96-95.573l54.613,54.613L24.191,488.107z M135.124,438.613l-60.587-60.587l11.947-11.947l60.587,60.587L135.124,438.613z M484.137,88.747L484.137,88.747l-60.161-60.161l0.427-0.426c13.653-13.653,34.987-13.653,48.64,0l11.093,11.093c6.827,6.827,10.24,15.36,10.24,24.747S490.964,81.92,484.137,88.747z"></path>
+          </svg>
+          <svg class="pencil pencil-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512.853 512.853" xml:space="preserve">
+            <path d="M496.084,26.453L484.991,15.36c-19.627-20.48-52.053-20.48-72.533,0l-6.826,6.826c0,0,0,0-0.001,0.001l-31.682,31.682 l-28.05,28.05c0,0,0,0-0.001,0.001L234.135,193.682L82.381,345.436c-0.975,0.426-1.9,1.047-2.724,1.871L55.764,371.2 c-2.019,2.019-2.833,4.633-2.465,7.139L0.297,500.907c-1.707,3.413-0.853,6.827,1.707,9.387c1.707,1.707,3.413,2.56,5.973,2.56c0.853,0,2.56,0,3.413-0.853l127.147-53.76c2.56-0.853,4.267-3.413,5.12-5.973v0l18.736-18.736c0.934-0.42,1.848-0.995,2.597-1.744l331.093-331.093c10.24-9.387,15.36-23.04,15.36-36.693S506.324,36.693,496.084,26.453zM412.014,40.517l60.176,60.176l-23.893,23.893L388.09,64.379L412.014,40.517z M352.203,100.172l23.561,23.561L146.217,353.28l-23.862-23.862L352.203,100.172z M110.82,340.923l30.277,30.277c1.707,1.707,3.413,2.56,5.973,2.56c1.707,0,4.267-0.853,5.973-2.56l240.64-241.493c3.413-3.413,3.413-8.533,0-11.947l-29.519-29.519l11.962-11.931l60.223,60.223L159.017,413.867L98.431,353.28L110.82,340.923z M24.191,488.107l40.96-95.573l54.613,54.613L24.191,488.107z M135.124,438.613l-60.587-60.587l11.947-11.947l60.587,60.587L135.124,438.613z M484.137,88.747L484.137,88.747l-60.161-60.161l0.427-0.426c13.653-13.653,34.987-13.653,48.64,0l11.093,11.093c6.827,6.827,10.24,15.36,10.24,24.747S490.964,81.92,484.137,88.747z"></path>
+          </svg>
+        </span>
+        <span class="animate-arrow">
+          <svg class="arrow" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z"></path>
+          </svg>
+        </span>
+      </a>
     </div>
 
     <!-- Information -->
@@ -71,32 +140,55 @@
           <h5>ありがとう<span class="particle">ございます</span> (arigatōgozaimasu)</h5>
           <p>”ございます (gozaimasu)” a more formal or polite equivilant of ある.</p>
         </div>
-      </div>      
+      </div>
     </div>
 
     <!-- Learn Alphabet -->
     <div class="card" id="alphabet-card">
-      <p>Alphabet</p>
+      <h2>Alphabet Practice</h2>
+      <div class="info-card">
+        <h3>Study the Japanese Alphabets!</h3>
+        <hr>
+        <p>The Japanese language consists of three alphabets; <span class="particle">Hiragana</span>,<span class="particle">Katakana</span>, and <span class="particle">Kanji</span>. Dekiru contains of only two, being the <span class="particle">Hiragana</span> and <span class="particle">Katakana</span> alphabets.</p>
+        <hr>
+        <p>Learn character recognition and pronunciation for both writing systems.</p>
+        <hr>
+        <p>Click the button below to get started!</p>
+      </div>
+      <a href="alphabet.html" class="alphabet-button">
+        <span id="ticker">あ</span>
+        <span class="animate-arrow">
+          <svg class="arrow" version="1.1" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.489 31.975c-0.271 0-0.549-0.107-0.757-0.316-0.417-0.417-0.417-1.098 0-1.515l14.258-14.264-14.050-14.050c-0.417-0.417-0.417-1.098 0-1.515s1.098-0.417 1.515 0l14.807 14.807c0.417 0.417 0.417 1.098 0 1.515l-15.015 15.022c-0.208 0.208-0.486 0.316-0.757 0.316z"></path>
+          </svg>
+        </span>
+      </a>
     </div>
   </main>
 
   <footer>
     <div class="footer-nav">
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/lessons.webp" alt="Lessons button">
+      <div class="footer-item footer-start">
+        <a href="lessons.html">
+          <button id="lessons-mobile-button">
+            <img src="images/lessons.webp" alt="Lessons button" loading="lazy">
+          </button>
         </a>
         <span>Lessons</span>
       </div>
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/home-icon.webp" alt="Home button">
+      <div class="footer-item footer-center">
+        <a href="dekiru.html">
+          <button id="home-mobile-button">
+            <img src="images/home-icon.webp" alt="Home button" loading="lazy">
+          </button>
         </a>
         <span>Home</span>
       </div>
-      <div class="footer-item">
-        <a href="#">
-          <img src="images/alphabet-icon.webp" alt="Alphabet button">
+      <div class="footer-item footer-end">
+        <a href="alphabet.html">
+          <button id="alphabet-mobile-button">
+            <img src="images/alphabet-icon.webp" alt="Alphabet button" loading="lazy">
+          </button>
         </a>
         <span>Alphabet</span>
       </div>

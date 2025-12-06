@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Robbie Yamashita">
+  <meta name="description" content="Dekiru できる | Dekiru Japanes language learning webapp form submit page, user's submittion status, recorded through localstorage.">
+  <title>Dekiru できる | Submitted Form Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style-large.css">
+  <script src="scripts/game.js" defer></script>
+  <script src="scripts/submitted_form.js" defer></script>
+</head>
+<body>
+
+  <div id="overlay"></div>
+  <!-- Content injected -->
+  <header></header>
+  <div class="feedback-modal"></div>
+  <main class="submitted-form-main">
+    <div class="onsuccess-card">
+      <div class="message">
+        <h2>Thank You!</h2>
+        <p>Your feedback has been recorded.</p>
+      </div>
+      <div class="counter">
+        <p>Total Reviews Completed: <span id="reviewCount">0</span></p>
+      </div>
+      <div class="review-details">
+        <h3>Your Review Summary:</h3>
+        <div id="reviewSummary"></div>
+      </div>
+      <a href="dekiru.html" class="back-button">Go back</a>
+    </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
